@@ -1,12 +1,12 @@
 # Computational Geometry
 
-This repository documents a branch-off of the Computational Geometry project offered by [WnCC](https://wncc-iitb.org) under Seasons of Code 2021. The project introduction, as given by the mentor:
+This repository documents my work done in the Computational Geometry project offered by [WnCC](https://wncc-iitb.org) under Seasons of Code 2021. The project introduction, as given by the mentor:
 
 Computational geometry is a term claimed by a number of different groups. The term was coined perhaps first by Marvin Minsky in his book “Perceptrons”, which was about pattern recognition, and it has also been used often to describe algorithms for manipulating curves and surfaces in solid modeling. Its most widely recognized use, however, is to describe the subfield of algorithm theory that involves the design and analysis of efficient algorithms for problems involving geometric input and output.
 
 There are many fields of computer science that deal with solving problems of a geometric nature. These include computer graphics, computer vision and image processing, robotics, computer-aided design and manufacturing, computational fluid-dynamics, and geographic information systems, to name a few.
 
-The complete project proposal can be found [here](https://wncc-iitb.org/soc_projects/88-comp-geo.html).
+The complete project description can be found [here](https://wncc-iitb.org/soc_projects/88-comp-geo.html). My planned timeline for the project is linked [here](https://docs.google.com/document/d/1N_xf7-tXfuDkJJCie_G4JZmmYIw2go8t9ir-AmHkiSo/edit#heading=h.rrar1dgps27e).
 
 ## Resources
 
