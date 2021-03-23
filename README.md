@@ -14,8 +14,6 @@ The complete project description can be found [here](https://wncc-iitb.org/soc_p
 
 * Computational Geometry - online course on Coursera. [Link](https://www.coursera.org/learn/computational-geometry)
 
-* Computer Graphics: Principles and Practice. [Link](http://www.cs.ucy.ac.cy/courses/EPL426/courses/eBooks/ComputerGraphicsPrinciplesPractice.pdf)
-
 ## Secondary Resources
 
 (to be covered if time permits/be used as extra references)
@@ -25,5 +23,7 @@ The complete project description can be found [here](https://wncc-iitb.org/soc_p
 * CMSC 754 lecture notes by Prof. David M. Mount, University of Maryland. [Link](https://www.cs.umd.edu/~mount/754/Lects/754lects.pdf)
 
 * CS 663 lecture notes by Prof. Jyh-Ming Lien, George Mason University. [Link](https://cs.gmu.edu/~jmlien/teaching/cs633/)
+
+* Computer Graphics: Principles and Practice. [Link](http://www.cs.ucy.ac.cy/courses/EPL426/courses/eBooks/ComputerGraphicsPrinciplesPractice.pdf)
 
 * Geometric Algorithms - online course on Coursera. [Link](https://www.coursera.org/learn/geometric-algorithms)
