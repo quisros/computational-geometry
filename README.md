@@ -14,9 +14,11 @@ The complete project description can be found [here](https://wncc-iitb.org/soc_p
 
 * Computational Geometry - online course on Coursera. [Link](https://www.coursera.org/learn/computational-geometry)
 
+* Computer Graphics: Principles and Practice. [Link](http://www.cs.ucy.ac.cy/courses/EPL426/courses/eBooks/ComputerGraphicsPrinciplesPractice.pdf)
+
 ## Secondary Resources
 
-(to be covered if time permits/used as extra references)
+(to be covered if time permits/be used as extra references)
 
 * CS 274 lecture notes by Prof. Jonathan Shewchuk, UC Berkeley. [Link](https://people.eecs.berkeley.edu/~jrs/274/)
 
