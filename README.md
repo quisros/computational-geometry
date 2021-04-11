@@ -1,12 +1,28 @@
 # Computational Geometry
 
-This repository documents my work done in the Computational Geometry project offered by [WnCC](https://wncc-iitb.org) under Seasons of Code 2021. The project introduction, as given by the mentor:
+This repository documents my work done in the Computational Geometry project offered by [WnCC](https://wncc-iitb.org) under Seasons of Code 2021. An overview of the project can be found [here](https://wncc-iitb.org/soc_projects/88-comp-geo.html).
 
-Computational geometry is a term claimed by a number of different groups. The term was coined perhaps first by Marvin Minsky in his book “Perceptrons”, which was about pattern recognition, and it has also been used often to describe algorithms for manipulating curves and surfaces in solid modeling. Its most widely recognized use, however, is to describe the subfield of algorithm theory that involves the design and analysis of efficient algorithms for problems involving geometric input and output.
+After understanding and implementing some of the fundamental computational geometry algorithms and techniques, I aim to explore the applications of these algorithms in the field of computer graphics as described in [this](http://dpd.cs.princeton.edu/Papers/DobkinIEEE.pdf) article.
 
-There are many fields of computer science that deal with solving problems of a geometric nature. These include computer graphics, computer vision and image processing, robotics, computer-aided design and manufacturing, computational fluid-dynamics, and geographic information systems, to name a few.
+## Progress till first checkpoint (11/04/2021)
 
-The complete project description can be found [here](https://wncc-iitb.org/soc_projects/88-comp-geo.html). The main github repository for the project is [here](https://github.com/aravindbharathi/Seasons-of-Code). My initial proposal is [here](https://docs.google.com/document/d/1kn_Ouh7MnzBQ_iozBXk-9qgpD6IZfbOUlyzwlDRy6RQ/edit) and planned timeline for the project is [here](https://docs.google.com/document/d/1N_xf7-tXfuDkJJCie_G4JZmmYIw2go8t9ir-AmHkiSo/edit#heading=h.rrar1dgps27e).
+The following fundamental problems and algorithms to solve them have been studied, and work on implementing them in code, keeping in mind the relevant data structures, has been started.
+
+1. Fixed-Radius Near Neighbour Problem
+
+Given a set _P_ of points in a plane (though one can consider higher dimensional spaces as well) and a distance _r_ > 0, the goal is to find all distinct pairs of points _p_,_q_ such that the Euclidean distance between them is at most _r_. The proposed algorithm starts with the case of 1-dimensional points. Since it uses bucketing, the method is easily generalised to _d_-dimensional points.
+
+2. Convex Hull Problem
+
+Given a set _P_ of points in a plane, output a representation of _P_'s convex hull, i.e. the smallest convex set (polygon) that contains all the points. A simple algorithm of complexity O(n^3) is discussed, where n is the number of points, followed by the more efficient Graham's scan which runs in O(nlogn) time. Another approach is the QuickHull algorithm, which is a somewhat generalized version of the quick-sort procedure. Other algorithms developed to solve this problem include Gift-Wrapping and Jarvis’s March, Output Sensitive Convex Hull Algorithms, and Chan’s Algorithm.
+
+3. Line Segment Intersection
+
+As the name suggests, this problem involves computing intersections. Algorithms to solve this for 2 and 3 dimensional lines find use in many application areas - in computer graphics, the computationally most intensive part of ray shooting is determining the intersection of the ray with other objects in the rendered scene. The basic algorithm is covered, along with the well-known Plane Sweeep algorithm.
+
+4. Polygon Triangulation
+
+Given a polygon _P_, the aim is to decompose it into a set of disjoint triangles. Though an O(n) algorithm has been found, it is too intricate to be used in practical applications. An O(nlogn) algorithm is discussed - it first considers the special case of triangulating a monotone polygon, and then considers how to convert an arbitrary polygon into a collection of disjoint monotone polygons such that the first part of the algorithm can be applied to them.
 
 ## Primary Resources
 
@@ -15,16 +31,3 @@ The complete project description can be found [here](https://wncc-iitb.org/soc_p
 * CMSC 754 lecture notes by Prof. David M. Mount, University of Maryland. [Link](https://www.cs.umd.edu/~mount/754/Lects/754lects.pdf)
 
 * Computational Geometry - online course on Coursera. [Link](https://www.coursera.org/learn/computational-geometry)
-
-## Secondary Resources
-
-(to be covered if time permits/be used as extra references)
-
-* CS 274 lecture notes by Prof. Jonathan Shewchuk, UC Berkeley. [Link](https://people.eecs.berkeley.edu/~jrs/274/)
-
-
-* CS 663 lecture notes by Prof. Jyh-Ming Lien, George Mason University. [Link](https://cs.gmu.edu/~jmlien/teaching/cs633/)
-
-* Computer Graphics: Principles and Practice. [Link](http://www.cs.ucy.ac.cy/courses/EPL426/courses/eBooks/ComputerGraphicsPrinciplesPractice.pdf)
-
-* Geometric Algorithms - online course on Coursera. [Link](https://www.coursera.org/learn/geometric-algorithms)
