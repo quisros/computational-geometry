@@ -1,3 +1,4 @@
+import sys
 from point import *
 
 def SlowConvexHull(P):
@@ -42,24 +43,20 @@ def GrahamsScan(P):
 
     for i in range(2,n):
         L_upp.append(P[i])
-        crlu = len(L_upp)
-        while (crlu>2) and (not DirectedEdge(L_upp[crlu-3],L_upp[crlu-2]).right_turns_with(L_upp[crlu-1])):
-            del L_upp[crlu-2]
-            crlu = len(L_upp)
+        while (len(L_upp)>2) and (not DirectedEdge(L_upp[-3],L_upp[-2]).right_turns_with(L_upp[-1])):
+            del L_upp[-2]
 
     L_low = [P[n-1],P[n-2]]
 
     for i in reversed(range(n-2)):
         L_low.append(P[i])
         crll = len(L_low)
-        while (crll>2) and (not DirectedEdge(L_low[crll-3],L_low[crll-2]).right_turns_with(L_low[crll-1])):
-            del L_low[crll-2]
-            crll = len(L_low)
+        while (len(L_low)>2) and (not DirectedEdge(L_low[-3],L_low[-2]).right_turns_with(L_low[-1])):
+            del L_low[-2]
 
-    crll = len(L_low)
-    del L_low[crll-1]
+    del L_low[-1]
     del L_low[0]
-    
+
     L = L_upp
     L.extend(L_low)
     plot_polygon(P,L,"GrahamsScan")
@@ -76,7 +73,15 @@ def main():
     for i in range (0,int(n/2)):
         P.append(Point(float(in_list[2*i]), float(in_list[(2*i)+1])))
 
-    L = GrahamsScan(P)
+    alg = int(sys.argv[1])
+    if alg==1:
+        L = SlowConvexHull(P)
+    elif alg==2:
+        L = GrahamsScan(P)
+    else:
+        print("Error! Wrong command line argument entered")
+        quit(1)
+
     l = len(L)
 
     for i in range(0,l):
