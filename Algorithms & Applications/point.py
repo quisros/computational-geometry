@@ -24,13 +24,13 @@ class DirectedEdge:
     def __str__(self):
         return "({},{})=>({},{})".format(self.p.x,self.p.y,self.q.x,self.q.y)
 
-    def is_r_left_of_pq(self,r):
+    def right_turns_with(self,r):
 
         t1 = (self.q.x - self.p.x)*(r.y - self.p.y)
         t2 = (self.q.y - self.p.y)*(r.x - self.p.x)
         C = t1 - t2
 
-        if C>0:
+        if C<0:
             return True
         return False
 
