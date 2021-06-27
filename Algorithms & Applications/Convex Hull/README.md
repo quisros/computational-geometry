@@ -14,4 +14,6 @@ Example input of points: <code>8 6 2 9 8 7 5 3 4 6 5 1 0 9 6 9 4 7 5 6 5 2 9 8 1
 
 A png file with the entered points marked in red and the computed polygon drawn in blue will be generated.
 
-![SlowConvexHull](SlowConvexHull.png "Example 1") ![Graham's Scan](GrahamsScan.png "Example 2")
+Example 1                  |  Example 2
+:-------------------------:|:-------------------------:
+![](SlowConvexHull.png)  |  ![](GrahamsScan.png)
