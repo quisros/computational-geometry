@@ -9,3 +9,4 @@ To run Graham's scan: replace <number> with 2
 
 A png file with the entered points marked in red and the computed polygon drawn in blue will be generated.
 
+![SlowConvexHull](SlowConvexHull.png "Example 1") ![Graham's Scan](GrahamsScan.png "Example 2")

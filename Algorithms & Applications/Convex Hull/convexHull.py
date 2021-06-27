@@ -50,7 +50,6 @@ def GrahamsScan(P):
 
     for i in reversed(range(n-2)):
         L_low.append(P[i])
-        crll = len(L_low)
         while (len(L_low)>2) and (not DirectedEdge(L_low[-3],L_low[-2]).right_turns_with(L_low[-1])):
             del L_low[-2]
 
