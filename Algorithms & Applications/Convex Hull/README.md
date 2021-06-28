@@ -4,9 +4,9 @@ Running instructions:
 
 <code> python3 convexHull.py \<number\> </code>
 
-To run the brute force algorithm: replace <number> with 1
+To run the brute force algorithm: replace \<number\> with 1
 
-To run Graham's scan: replace <number> with 2
+To run Graham's scan: replace \<number\> with 2
 
 The program will ask for input of points after running the above instruction.
   
