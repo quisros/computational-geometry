@@ -14,7 +14,7 @@ Enter the points in the format <code>x1 y1 x2 y2 ... xn yn</code> i.e. each coor
 
 Example input of points: <code>8 6 2 9 8 7 5 3 4 6 5 1 0 9 6 9 4 7 5 6 5 2 9 8 1 3 8 0 1 2</code>
 
-A png file with the entered points marked in red and the computed polygon drawn in blue will be generated.
+A png file with the entered points marked in red and the computed polygon drawn in blue will be generated, and the edges of the polygon will be printed as output.
 
 Example 1                  |  Example 2
 :-------------------------:|:-------------------------:
