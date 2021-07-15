@@ -13,16 +13,16 @@ One line segment per line, each segment in the format <code>x1 y1 x2 y2</code>, 
 
 Example input of the line segments' coordinate data: 
 <code>
-8 6 2 9 
-8 7 5 3 
-4 6 5 1 
-0 9 6 9 
-4 7 5 6 
-5 2 9 8 
+8 6 2 9\ 
+8 7 5 3\ 
+4 6 5 1\ 
+0 9 6 9\ 
+4 7 5 6\ 
+5 2 9 8\ 
 1 3 8 0</code>
 
 A png file with the entered/randomly generated line segments drawn in blue and the computed points of intersection marked in red will be produced, and the points of intersection will be printed as output.
 
 Example 1                  |  Example 2
 :-------------------------:|:-------------------------:
-![](LineSegInt_0.png)  |  ![](LineSegInt_1.png)
+![](LinSegInt_0.png)  |  ![](LinSegInt_1.png)
