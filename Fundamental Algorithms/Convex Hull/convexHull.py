@@ -1,4 +1,5 @@
 import sys
+import random
 from point import *
 
 def SlowConvexHull(P):
@@ -65,12 +66,26 @@ def GrahamsScan(P):
 def main():
 
     P = []
-    in_str = str(input("Enter the points in format: x1 y1 x2 y2 ... xn yn, i.e. separated by spaces:\n"))
-    in_list = in_str.split(" ")
 
-    n = len(in_list)
-    for i in range (0,int(n/2)):
-        P.append(Point(float(in_list[2*i]), float(in_list[(2*i)+1])))
+    dec = str(input("Do you want the points to be generated randomly? y/n: "))
+
+    if dec=="y":
+        n = int(input("Enter the number of points to be generated: "))
+        for i in range(n):
+            pt = Point(random.randint(0,25),random.randint(0,25))
+            P.append(pt)
+
+    elif dec=="n":
+        in_str = str(input("Enter the points in format: x1 y1 x2 y2 ... xn yn, i.e. separated by spaces:\n"))
+        in_list = in_str.split(" ")
+
+        n = len(in_list)
+        for i in range (0,int(n/2)):
+            P.append(Point(float(in_list[2*i]), float(in_list[(2*i)+1])))
+
+    else:
+        print("Invalid input! Please try again.")
+        quit()
 
     alg = int(sys.argv[1])
     if alg==1:
