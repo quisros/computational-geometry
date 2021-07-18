@@ -11,18 +11,16 @@ Studied the following fundamental problems and understood the relevant proofs an
 1. Fixed-Radius Near Neighbour Problem
 2. Convex Hull Problem
 3. Line Segment Intersection
-4. Polygon Triangulation
 
 #### Phase 2: May
 
 Understood the relevant proofs and algorithms of all and completed code implementations of some of the following problems from Computational Geometry: Algorithms and Applications. [Link](https://people.inf.elte.hu/fekete/algoritmusok_msc/terinfo_geom/konyvek/Computational%20Geometry%20-%20Algorithms%20and%20Applications,%203rd%20Ed.pdf) 
 
-1. Line Segment Intersection
-2. Polygon Triangulation
-3. Orthogonal Range Searching
-4. Point Location
-5. Voronoi Diagrams
-6. Delaunay Triangulations
+1. Polygon Triangulation
+2. Orthogonal Range Searching
+3. Point Location
+4. Voronoi Diagrams
+5. Delaunay Triangulations
 
 #### Phase 3: June-July
 
