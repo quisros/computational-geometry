@@ -1,7 +1,4 @@
 import numpy as np
-import pylab as pl
-import random
-from matplotlib import collections  as mc
 
 class Point:
 
@@ -47,15 +44,20 @@ class Point:
         res = Point(xsc, ysc)
         return res
 
+    def distance(self, other):
 
-class LineSegment:
+        vec = self - other
+        return np.sqrt((vec.x**2) + (vec.y**2))
+
+
+class Segment:
 
     def __init__(self, p, q):
         self.p = p
         self.q = q
 
     def __str__(self):
-        return "({},{})<--->({},{})".format(self.p.x,self.p.y,self.q.x,self.q.y)
+        return "({},{})==({},{})".format(self.p.x,self.p.y,self.q.x,self.q.y)
 
     def orientation(self,r):
 
@@ -69,29 +71,3 @@ class LineSegment:
             return 0
         else: #anti-clockwise
             return -1
-
-def plot_intersegments(S,P):
-
-    lines = []
-    xs = []
-    ys = []
-
-    for seg in S:
-        arr = [(seg.p.x, seg.p.y), (seg.q.x, seg.q.y)]
-        lines.append(arr)
-
-    for point in P:
-        xs.append(point.x)
-        ys.append(point.y)
-
-    lc = mc.LineCollection(lines, linewidths=2)
-    fig, ax = pl.subplots()
-    ax.add_collection(lc)
-    ax.scatter(xs,ys,c="r")
-    ax.autoscale()
-    ax.margins(0.1)
-    ax.set_title("Line Segment Intersection")
-
-    num = random.randint(1, 10)
-
-    fig.savefig("LinSegInt" + str(num) + ".png")
