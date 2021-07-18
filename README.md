@@ -2,7 +2,7 @@
 
 This repository documents my work done in the Computational Geometry project offered by [WnCC](https://wncc-iitb.org) under Seasons of Code 2021. An overview of the project can be found [here](https://wncc-iitb.org/soc_projects/88-comp-geo.html).
 
-After understanding and implementing some of the fundamental computational geometry algorithms and techniques, I aim to explore the applications of these algorithms in the field of computer graphics and structural biology.
+After understanding and implementing some of the fundamental computational geometry algorithms and techniques, the aim was to explore the applications of these algorithms in the fields of computer graphics and structural biology. A preliminary report of the topics covered can be found in [here](Report/report_soc.pdf).
 
 #### Phase 1: March-April
 
